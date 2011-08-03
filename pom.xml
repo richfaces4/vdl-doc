@@ -22,7 +22,7 @@
 
     <groupId>org.richfaces.build.resources</groupId>
     <artifactId>faces-vdl-documentation</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>1</version>
 
     <parent>
         <groupId>org.jboss</groupId>
