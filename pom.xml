@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.richfaces.build.resources</groupId>
+    <artifactId>faces-vdl-documentation</artifactId>
+    <version>1-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>6</version>
+    </parent>
+
+    <name>RichFaces VDL Documentation</name>
+    <url>https://github.com/richfaces/vdl-doc</url>
+
+    <description>Richfaces Resources for VDL generation</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <!-- To define the plugin version in your parent POM -->
+        <resources>
+            <resource>
+                <directory>src/main/resources/xsl</directory>
+                <targetPath>xsl</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources/css</directory>
+                <targetPath>css</targetPath>
+            </resource>
+        </resources>
+    </build>
+
+    <!-- SCM and distribution management -->
+    <scm>
+        <connection>scm:git:git://github.com/richfaces/vdl-doc.git</connection>
+        <developerConnection>scm:git:git@github.com:richfaces/vdl-doc.git</developerConnection>
+        <url>https://github.com/richfaces/vdl-doc</url>
+    </scm>
+</project>
