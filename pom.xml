@@ -29,7 +29,7 @@
 
     <groupId>org.richfaces.build.resources</groupId>
     <artifactId>faces-vdl-documentation</artifactId>
-    <version>1</version>
+    <version>2-SNAPSHOT</version>
 
     <name>RichFaces VDL Documentation</name>
     <url>https://github.com/richfaces/vdl-doc</url>
