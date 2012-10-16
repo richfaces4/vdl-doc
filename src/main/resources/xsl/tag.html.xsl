@@ -199,13 +199,14 @@
                     <xsl:value-of select="javaee:tag-name"/>
                 </h2>
                 <hr/>
+
+                <xsl:value-of select="javaee:description" disable-output-escaping="yes"/>
+                <br/>
+                <p/>
+                <hr/>
+
                 <xsl:choose>
                     <xsl:when test="javaee:component">
-
-                        <xsl:value-of select="javaee:component/javaee:description" disable-output-escaping="yes"/>
-                        <br/>
-                        <p/>
-                        <hr/>
 
                         <!-- Tag Information -->
                         <table border="1" cellpadding="3" cellspacing="0" width="100%">
@@ -291,10 +292,6 @@
                         
                     </xsl:when>
                     <xsl:when test="javaee:behavior">
-                        <xsl:value-of select="javaee:behavior/javaee:description" disable-output-escaping="yes"/>
-                        <br/>
-                        <p/>
-                        <hr/>
 
                         <!-- Tag Information -->
                         <table border="1" cellpadding="3" cellspacing="0" width="100%">
